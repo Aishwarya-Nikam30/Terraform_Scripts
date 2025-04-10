@@ -4,26 +4,26 @@ Terraform is an open-source Infrastructure as Code (IaC) tool created by HashiCo
 It allows you to define, provision, and manage infrastructure across multiple cloud providers using a declarative configuration language called HashiCorp Configuration Language (HCL).
 
 ## Terraform Core Concepts
-Providers:
+**Providers**:
 Providers are plugins that allow Terraform to interact with cloud providers (like AWS, Azure, GCP) or other APIs.
 
-Resources:
+**Resources**:
 Resources are the components that Terraform manages, such as virtual machines, storage accounts, or networking services.
 
-Variables:
+**Variables**:
 Variables allow you to make your Terraform code dynamic and reusable.
 
-Outputs:
+**Outputs**:
 Outputs are used to display information after your Terraform run, such as IP addresses or URLs.
 
-State File:
+**State File**:
 Terraform keeps track of the infrastructure it manages using a state file (`terraform.tfstate`).
 This file maps your configuration to the real-world resources.
 
-Modules:
+**Modules**:
 A module is a container for multiple resources that are used together. Modules can be reused across projects.
 
-Provisioners:
+**Provisioners**:
 Provisioners allow you to execute scripts or commands on a local or remote machine after a resource is created.
 
 ## Basic Terraform Workflow
