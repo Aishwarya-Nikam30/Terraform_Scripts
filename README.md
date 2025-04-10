@@ -44,3 +44,21 @@ Apply the changes to reach the desired infrastructure state.
 
 6. Destroy (`terraform destroy`):
 Remove all the infrastructure managed by Terraform.
+## Terraform Best Practices
+> **Use Remote Backend for State Files**:  
+> Always store `terraform.tfstate` in a remote backend like S3 with DynamoDB locking to avoid losing data.
+
+> **Always Version Control**:  
+> Save `.tf` files in Git and use meaningful commit messages.
+
+> **Use Modules for Reusability**:  
+> Break down infrastructure into reusable modules instead of writing everything in one big file.
+
+> **Define Variables Properly**:  
+> Use `variables.tf` to define input variables with types and descriptions.
+
+> **Sensitive Outputs**:  
+> Mark sensitive outputs as `sensitive = true` to avoid leaking secrets.
+
+> **Plan Before Apply**:  
+> Always run `terraform plan` and review the changes before running `terraform apply`.
