@@ -89,5 +89,4 @@ It allows you to define, provision, and manage infrastructure across multiple cl
 > **Format and Validate Code**:  
 > Always run `terraform fmt` and `terraform validate` before pushing your code.
 
----
-
+----
